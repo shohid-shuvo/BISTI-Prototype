@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BISTI — Baira International Skills Development &amp; Training Institute</title>
-<meta name="description" content="Baira International Skills Development &amp; Training Institute (BISTI) — job-oriented technical and vocational skills training for a skilled nation and global employment.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e2f7d">
+<title>BISTI — বায়রা ইন্টারন্যাশনাল স্কিলস ডেভেলপমেন্ট অ্যান্ড ট্রেনিং ইনস্টিটিউট</title>
+<meta name="description" content="BAIRA International Skills Development &amp; Training Institute (BISTI) — job-oriented technical and vocational skills training for a skilled nation and global employment.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="bisti%20transparent%20Logo.png">
+
+<!-- Apply the saved theme / language before first paint so there is no flash -->
+<script>
+(function () {
+  var d = document.documentElement;
+  d.setAttribute('data-theme', 'dark');
+  try {
+    if (localStorage.getItem('bisti-theme') === 'light') d.removeAttribute('data-theme');
+    if (localStorage.getItem('bisti-lang') === 'en') {
+      d.classList.add('lang-en');
+      d.setAttribute('lang', 'en');
+    }
+  } catch (e) { /* private mode — use the dark Bangla default */ }
+})();
+</script>
 </head>
 <body>
 
@@ -36,132 +52,312 @@
   <symbol id="i-tw" viewBox="0 0 24 24"><path d="M18.2 3h3l-6.6 7.6L22.5 21h-6l-4.7-6.2L6.3 21h-3l7-8.1L1.9 3h6.2l4.3 5.7L18.2 3Zm-1 16h1.6L7.9 4.7H6.1L17.2 19Z"/></symbol>
   <symbol id="i-in" viewBox="0 0 24 24"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5ZM3 9.5h4V21H3V9.5Zm6.5 0h3.8v1.6h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76V21h-4v-5.3c0-1.27-.02-2.9-1.8-2.9-1.8 0-2.07 1.37-2.07 2.8V21h-4V9.5Z"/></symbol>
   <symbol id="i-yt" viewBox="0 0 24 24"><path d="M22.5 7.2a3 3 0 0 0-2.1-2.1C18.6 4.6 12 4.6 12 4.6s-6.6 0-8.4.5A3 3 0 0 0 1.5 7.2 31 31 0 0 0 1 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.8.5 8.4.5 8.4.5s6.6 0 8.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23 12a31 31 0 0 0-.5-4.8ZM9.9 15.3V8.7l5.7 3.3-5.7 3.3Z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.2-.6-1.6-.9-2.2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.4.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.2-.3-.2-.5-.3ZM12 22a10 10 0 0 1-5.1-1.4L2 22l1.5-4.7A10 10 0 1 1 12 22Zm0-18.2a8.2 8.2 0 0 0-7 12.5l.3.4-.9 2.7 2.8-.8.4.2A8.2 8.2 0 1 0 12 3.8Z"/></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 5h3.5v14H7V5Zm6.5 0H17v14h-3.5V5Z"/></symbol>
   <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 3 1 8l11 5 9-4.1V16h2V8L12 3Z"/><path d="M5 11.6V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-5.4l-7 3.2-7-3.2Z"/></symbol>
   <symbol id="i-right" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><path d="M11 3a8 8 0 1 0 4.9 14.3l4.4 4.4 1.4-1.4-4.4-4.4A8 8 0 0 0 11 3Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Z"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4L12 16 6.3 10.3l1.4-1.4L11 12.2V3ZM5 18h14v2H5v-2Z"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm0 2.4L17.6 8H14V4.4Z"/></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-6 6v3.6L4 15v2h16v-2l-2-3.4V8a6 6 0 0 0-6-6Zm0 20a3 3 0 0 0 3-3H9a3 3 0 0 0 3 3Z"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><path d="M12 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Zm0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8Z"/><path d="m8.2 13.6-1.4 7.6 5.2-2.6 5.2 2.6-1.4-7.6a8 8 0 0 1-7.6 0Z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7ZM5 10h14v10H5V10Z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-4.4 0-8 2.4-8 5.3V22h16v-2.7c0-2.9-3.6-5.3-8-5.3Z"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 15.4A8.7 8.7 0 0 1 8.6 3.5a8.7 8.7 0 1 0 11.9 11.9Z"/></symbol>
 </svg>
 
-<!-- ================================================================ TOPBAR -->
+<!-- ==================================================== TOP CONTACT BAR -->
 <div class="topbar">
   <div class="container topbar__inner">
-    <ul class="topbar__left">
-      <li><svg class="ic"><use href="#i-phone"/></svg><a href="tel:+8800000000000">+880 0000-000000</a></li>
-      <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:info@bisti.edu.bd">info@bisti.edu.bd</a></li>
-      <li class="topbar__hide"><svg class="ic"><use href="#i-clock"/></svg>Sat – Thu : 9:00 AM – 5:00 PM</li>
-    </ul>
-    <div class="topbar__right">
-      <span class="topbar__note">অভিবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয় অনুমোদিত</span>
-      <ul class="socials socials--top">
-        <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
-        <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
-        <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
-        <li><a href="#" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></a></li>
+      <ul class="topbar__left">
+        <li class="topbar__contacts">
+          <span><svg class="ic"><use href="#i-phone"/></svg><a href="tel:+8800000000000">+880 1700-000000</a></span>
+          <span><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:info@bisti.edu.bd">info@bisti.edu.bd</a></span>
+        </li>
+        <li class="topbar__hide"><svg class="ic"><use href="#i-clock"/></svg>শনি – বৃহস্পতি : সকাল ৯টা – বিকাল ৫টা</li>
       </ul>
-    </div>
+      <div class="topbar__right">
+        <span class="topbar__note">অভিবাসী কল্যাণ ও বৈদেশিক কর্মসংস্থান মন্ত্রণালয় অনুমোদিত</span>
+
+        <a class="topbar__office" href="https://www.baira.org.bd/" target="_blank" rel="noopener">
+          <svg class="ic ic--xs"><use href="#i-cap"/></svg> হেড অফিস ওয়েবসাইট
+        </a>
+
+        <div class="topbar__tools">
+          <div class="langsw" role="group" aria-label="ভাষা নির্বাচন">
+            <button type="button" class="langsw__btn is-active" data-lang="bn">অ</button>
+            <button type="button" class="langsw__btn" data-lang="en">A</button>
+          </div>
+          <button type="button" class="themebtn" data-theme-toggle aria-label="থিম পরিবর্তন করুন">
+            <svg class="ic ic--sun"><use href="#i-sun"/></svg>
+            <svg class="ic ic--moon"><use href="#i-moon"/></svg>
+          </button>
+        </div>
+
+        <ul class="socials socials--top">
+          <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
+          <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
+          <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></a></li>
+        </ul>
+      </div>
   </div>
 </div>
 
-<!-- ================================================================ HEADER -->
+<!-- ================================================================= HEADER -->
 <header class="header" id="header">
-  <div class="container header__inner">
 
-    <a href="#home" class="brand" aria-label="BISTI home">
-      <img src="bisti%20transparent%20Logo.png" alt="Baira International Skills Development &amp; Training Institute (BISTI)" class="brand__logo">
-    </a>
+  <!-- main row : logo + info + actions -->
+  <div class="header__main">
+    <div class="container header__main-inner">
+      <a href="#home" class="brand" aria-label="BISTI home">
+        <img src="bisti%20transparent%20Logo.png" alt="BAIRA International Skills Development &amp; Training Institute (BISTI)" class="brand__logo">
+      </a>
 
-    <nav class="nav" id="nav" aria-label="Main">
-      <button class="nav__close" id="navClose" aria-label="Close menu">&times;</button>
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link is-active">Home</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About Us</a></li>
-        <li class="nav__item nav__item--has-sub">
-          <a href="#programs" class="nav__link">Programs <svg class="ic ic--xs"><use href="#i-right"/></svg></a>
-          <ul class="nav__sub">
-            <li><a href="#programs">All Trades</a></li>
-            <li><a href="#programs">Electrical &amp; Electronics</a></li>
-            <li><a href="#programs">Welding &amp; Fabrication</a></li>
-            <li><a href="#programs">AC &amp; Refrigeration</a></li>
-            <li><a href="#programs">Computer &amp; IT</a></li>
-            <li><a href="#programs">Plumbing &amp; Pipe Fitting</a></li>
-          </ul>
-        </li>
-        <li class="nav__item"><a href="#instructors" class="nav__link">Instructors</a></li>
-        <li class="nav__item"><a href="#gallery" class="nav__link">Gallery</a></li>
-        <li class="nav__item"><a href="#news" class="nav__link">Notice</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-      </ul>
-
-      <div class="nav__cta">
-        <a href="#admission" class="btn btn--maroon btn--sm">Apply Now <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+      <div class="header__info">
+        <div class="hinfo">
+          <span class="hinfo__ico"><svg class="ic"><use href="#i-phone"/></svg></span>
+          <div><small>হটলাইন</small><strong>+880 1700-000000</strong></div>
+        </div>
+        <div class="hinfo">
+          <span class="hinfo__ico"><svg class="ic"><use href="#i-mail"/></svg></span>
+          <div><small>ইমেইল</small><strong>info@bisti.edu.bd</strong></div>
+        </div>
       </div>
-    </nav>
 
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+      <div class="header__actions">
+        <a href="#result" class="btn btn--ghost btn--sm header__check">
+          <svg class="ic ic--xs"><use href="#i-search"/></svg> ফলাফল যাচাই
+        </a>
+        <a href="#admission" class="btn btn--maroon btn--sm">ভর্তি হোন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- nav row -->
+  <div class="header__nav">
+    <div class="container header__nav-inner">
+      <a href="#home" class="brand brand--mini" aria-label="BISTI home">
+        <img src="bisti%20transparent%20Logo.png" alt="BISTI">
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <div class="nav__head">
+          <img src="bisti%20transparent%20Logo.png" alt="BISTI" class="nav__logo">
+          <button class="nav__close" id="navClose" aria-label="মেনু বন্ধ করুন">&times;</button>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link is-active">হোম<small>Home</small></a></li>
+
+          <li class="nav__item nav__item--has-sub">
+            <a href="#about" class="nav__link">আমাদের সম্পর্কে<small>About</small><span class="nav__caret"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#about">About BISTI</a></li>
+              <li><a href="#about">Mission &amp; Vision</a></li>
+              <li><a href="#about">History</a></li>
+              <li><a href="#about">Accreditation &amp; Affiliation</a></li>
+              <li><a href="#about">Achievements</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-sub">
+            <a href="#admin" class="nav__link">প্রশাসন<small>Administration</small><span class="nav__caret"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#admin">Governing Body</a></li>
+              <li><a href="#admin">Principal / Director</a></li>
+              <li><a href="#admin">Management</a></li>
+              <li><a href="#admin">Departments</a></li>
+              <li><a href="#instructors">Trainers / Instructors</a></li>
+              <li><a href="#admin">Staff Directory</a></li>
+              <li><a href="#admin">Organogram</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-sub">
+            <a href="#programs" class="nav__link">ট্রেড / কোর্স<small>Trades</small><span class="nav__caret"></span></a>
+            <ul class="nav__sub nav__sub--wide">
+              <li><a href="#programs">All Trades</a></li>
+              <li><a href="#programs">Electrical</a></li>
+              <li><a href="#programs">Plumbing</a></li>
+              <li><a href="#programs">Masonry</a></li>
+              <li><a href="#programs">Welding</a></li>
+              <li><a href="#programs">Carpentry</a></li>
+              <li><a href="#programs">Computer / IT</a></li>
+              <li><a href="#programs">Refrigeration &amp; Air Conditioning</a></li>
+              <li><a href="#programs">Construction</a></li>
+              <li><a href="#programs">Language</a></li>
+              <li><a href="#programs">Other Short Courses</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-sub">
+            <a href="#admission" class="nav__link">ভর্তি<small>Admission</small><span class="nav__caret"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#admission">Admission Information</a></li>
+              <li><a href="#admission">Eligibility for Admission</a></li>
+              <li><a href="#admission">How to Apply</a></li>
+              <li><a href="#admission">Online Application</a></li>
+              <li><a href="#admission">Admission Schedule</a></li>
+              <li><a href="#admission">Course Fees</a></li>
+              <li><a href="#admission">Required Documents</a></li>
+              <li><a href="#admission">Download Forms</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-sub">
+            <a href="#result" class="nav__link">সার্টিফিকেট<small>Certificate</small><span class="nav__caret"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#result">Verify Certificate</a></li>
+              <li><a href="#result">Result Search</a></li>
+              <li><a href="#result">Verification Instructions</a></li>
+            </ul>
+          </li>
+
+          <li class="nav__item nav__item--has-sub">
+            <a href="#career" class="nav__link">ক্যারিয়ার<small>Career</small><span class="nav__caret"></span></a>
+            <ul class="nav__sub">
+              <li><a href="#career">Internship</a></li>
+              <li><a href="#career">Job Circulars</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="nav__foot">
+          <a href="#admission" class="btn btn--maroon btn--block">অনলাইনে আবেদন করুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+
+          <div class="nav__tools">
+            <div class="langsw langsw--wide" role="group" aria-label="ভাষা নির্বাচন">
+              <button type="button" class="langsw__btn is-active" data-lang="bn">বাংলা</button>
+              <button type="button" class="langsw__btn" data-lang="en">English</button>
+            </div>
+            <button type="button" class="themebtn themebtn--wide" data-theme-toggle aria-label="থিম পরিবর্তন করুন">
+              <svg class="ic ic--sun"><use href="#i-sun"/></svg>
+              <svg class="ic ic--moon"><use href="#i-moon"/></svg>
+              <span class="themebtn__label">ডার্ক মোড</span>
+            </button>
+          </div>
+
+          <ul class="nav__foot-contact">
+            <li><svg class="ic ic--xs"><use href="#i-phone"/></svg> +880 1700-000000</li>
+            <li><svg class="ic ic--xs"><use href="#i-mail"/></svg> info@bisti.edu.bd</li>
+          </ul>
+
+          <a class="nav__office" href="https://www.baira.org.bd/" target="_blank" rel="noopener">
+            <svg class="ic ic--xs"><use href="#i-cap"/></svg> হেড অফিস ওয়েবসাইট দেখুন
+          </a>
+
+          <ul class="socials socials--drawer">
+            <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
+            <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
+            <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
+            <li><a href="#" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
 </header>
 <div class="nav-overlay" id="navOverlay"></div>
 
+<!-- ======================================================== RUNNING NOTICE -->
+<div class="running" aria-label="চলমান নোটিশ">
+  <div class="container running__inner">
+    <span class="running__label"><svg class="ic ic--xs"><use href="#i-bell"/></svg> চলমান নোটিশ</span>
+    <div class="running__viewport">
+      <div class="running__track">
+        <a href="#news"><b>ভর্তি বিজ্ঞপ্তি:</b> ২০২৬ শিক্ষাবর্ষের নতুন ব্যাচে ভর্তি চলছে — আসন সীমিত।</a>
+        <a href="#news"><b>পরীক্ষা:</b> ট্রেড টেস্টের সময়সূচি প্রকাশিত হয়েছে।</a>
+        <a href="#result"><b>ফলাফল:</b> সর্বশেষ ব্যাচের ফলাফল এখন অনলাইনে দেখুন।</a>
+        <a href="#news"><b>নোটিশ:</b> সার্টিফিকেট বিতরণ অনুষ্ঠান আগামী বৃহস্পতিবার।</a>
+        <!-- duplicate for seamless loop -->
+        <a href="#news"><b>ভর্তি বিজ্ঞপ্তি:</b> ২০২৬ শিক্ষাবর্ষের নতুন ব্যাচে ভর্তি চলছে — আসন সীমিত।</a>
+        <a href="#news"><b>পরীক্ষা:</b> ট্রেড টেস্টের সময়সূচি প্রকাশিত হয়েছে।</a>
+        <a href="#result"><b>ফলাফল:</b> সর্বশেষ ব্যাচের ফলাফল এখন অনলাইনে দেখুন।</a>
+        <a href="#news"><b>নোটিশ:</b> সার্টিফিকেট বিতরণ অনুষ্ঠান আগামী বৃহস্পতিবার।</a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <main>
 
-<!-- ================================================================== HERO -->
+<!-- ============================================================ HERO SLIDER -->
 <section class="hero" id="home">
-  <div class="hero__bg">
-    <span class="hero__shape hero__shape--1 float"></span>
-    <span class="hero__shape hero__shape--2 float" style="animation-delay:-2s"></span>
-    <span class="hero__shape hero__shape--3"></span>
-    <span class="hero__grid"></span>
-  </div>
+  <div class="hslide" id="heroSlider">
 
-  <div class="container hero__inner">
-    <div class="hero__content">
-      <span class="eyebrow" data-reveal="fade-up">দক্ষ হাত · সমৃদ্ধ দেশ · বিশ্বব্যাপী কর্মসংস্থান</span>
-      <h1 data-reveal="fade-up" data-delay="1">
-        Build a <span class="txt-grad">Skilled Career</span> with World-Class Technical Training
-      </h1>
-      <p class="hero__lead" data-reveal="fade-up" data-delay="2">
-        BISTI — Baira International Skills Development &amp; Training Institute delivers
-        industry-standard, competency-based vocational training that prepares you for
-        decent work at home and abroad.
-      </p>
-
-      <div class="hero__actions" data-reveal="fade-up" data-delay="3">
-        <a href="#admission" class="btn">Start Admission <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
-        <a href="#programs" class="btn btn--ghost">Explore Programs</a>
+    <article class="hslide__item is-active">
+      <div class="hslide__bg">
+        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1600&h=900&q=80" alt="">
+        <span class="hslide__veil"></span>
       </div>
-
-      <div class="hero__mini" data-reveal="fade-up" data-delay="4">
-        <div class="hero__mini-item"><strong class="count" data-count="24">0</strong><span>Skill Trades</span></div>
-        <div class="hero__mini-item"><strong class="count" data-count="8500" data-suffix="+">0</strong><span>Trained Youths</span></div>
-        <div class="hero__mini-item"><strong class="count" data-count="96" data-suffix="%">0</strong><span>Job Placement</span></div>
+      <div class="container hslide__inner">
+        <div class="hslide__text">
+          <span class="eyebrow eyebrow--light">দক্ষ হাত · সমৃদ্ধ দেশ</span>
+          <h1>গড়ুন <span class="txt-grad-light">দক্ষ ক্যারিয়ার</span><br>বিশ্বমানের কারিগরি প্রশিক্ষণে</h1>
+          <p>BISTI — বায়রা ইন্টারন্যাশনাল স্কিলস ডেভেলপমেন্ট অ্যান্ড ট্রেনিং ইনস্টিটিউট। কর্মমুখী ও দক্ষতা-ভিত্তিক প্রশিক্ষণের মাধ্যমে দেশে ও বিদেশে সম্মানজনক কর্মসংস্থানের নিশ্চয়তা।</p>
+          <div class="hslide__actions">
+            <a href="#admission" class="btn btn--maroon">ভর্তি শুরু করুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+            <a href="#programs" class="btn btn--light">কোর্স দেখুন</a>
+          </div>
+        </div>
       </div>
+    </article>
+
+    <article class="hslide__item">
+      <div class="hslide__bg">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1600&h=900&q=80" alt="">
+        <span class="hslide__veil"></span>
+      </div>
+      <div class="container hslide__inner">
+        <div class="hslide__text">
+          <span class="eyebrow eyebrow--light">হাতে-কলমে প্রশিক্ষণ</span>
+          <h1>আধুনিক <span class="txt-grad-light">ওয়ার্কশপ ও ল্যাব</span><br>দিয়ে ব্যবহারিক শিক্ষা</h1>
+          <p>বাস্তব মেশিন আর যন্ত্রপাতিতে অনুশীলন — যাতে প্রশিক্ষণ শেষে আপনি সরাসরি কাজে নামতে পারেন, কোনো দ্বিধা ছাড়াই।</p>
+          <div class="hslide__actions">
+            <a href="#programs" class="btn btn--maroon">ট্রেড দেখুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+            <a href="#about" class="btn btn--light">আরও জানুন</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="hslide__item">
+      <div class="hslide__bg">
+        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1600&h=900&q=80" alt="">
+        <span class="hslide__veil"></span>
+      </div>
+      <div class="container hslide__inner">
+        <div class="hslide__text">
+          <span class="eyebrow eyebrow--light">প্রশিক্ষণ শেষে কর্মসংস্থান</span>
+          <h1>৯৬% <span class="txt-grad-light">চাকরি নিশ্চিত</span><br>প্রশিক্ষণ শেষে সহায়তা</h1>
+          <p>দেশি ও বিদেশি নিয়োগকারী প্রতিষ্ঠানের সাথে সরাসরি যোগাযোগ, ক্যারিয়ার কাউন্সেলিং এবং কাগজপত্র প্রস্তুতিতে সহায়তা।</p>
+          <div class="hslide__actions">
+            <a href="#result" class="btn btn--maroon">ফলাফল যাচাই <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+            <a href="#contact" class="btn btn--light">যোগাযোগ করুন</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- controls -->
+    <button class="hslide__arrow hslide__arrow--prev" id="hPrev" aria-label="আগের স্লাইড"><svg class="ic"><use href="#i-left"/></svg></button>
+    <button class="hslide__arrow hslide__arrow--next" id="hNext" aria-label="পরের স্লাইড"><svg class="ic"><use href="#i-right"/></svg></button>
+
+    <div class="hslide__controls">
+      <div class="hslide__dots" id="hDots"></div>
+      <button class="hslide__pause" id="hPause" aria-label="স্লাইড থামান">
+        <svg class="ic ic--xs"><use href="#i-pause"/></svg><span>থামান</span>
+      </button>
     </div>
-
-    <!-- hero visual -->
-    <div class="hero__visual" data-reveal="zoom" data-delay="2">
-      <div class="hero__imgwrap">
-        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Trainees in a technical workshop" loading="eager">
-        <div class="hero__shine"></div>
-      </div>
-
-      <div class="hero__badge hero__badge--a float">
-        <span class="hero__badge-ico"><svg class="ic"><use href="#i-cap"/></svg></span>
-        <div><strong>ISO Certified</strong><small>Training Standard</small></div>
-      </div>
-
-      <div class="hero__badge hero__badge--b float" style="animation-delay:-2.5s">
-        <div class="ring"><span>96%</span></div>
-        <div><strong>Placement</strong><small>Overseas &amp; Local</small></div>
-      </div>
-
-      <div class="hero__dots"></div>
-    </div>
   </div>
-
-  <div class="hero__scroll"><span></span>Scroll</div>
 </section>
 
 <!-- ========================================================== FEATURE STRIP -->
@@ -170,66 +366,144 @@
     <div class="strip__grid">
       <article class="strip__card" data-reveal="fade-up">
         <span class="strip__ico"><svg class="ic"><use href="#i-cap"/></svg></span>
-        <h4>Competency Based</h4>
-        <p>CBTA curriculum aligned to National Skills Standard (NSQ).</p>
+        <h4>কম্পিটেন্সি ভিত্তিক</h4>
+        <p>জাতীয় দক্ষতা মানদণ্ড (NSQ) অনুসারে সাজানো পাঠ্যক্রম।</p>
       </article>
       <article class="strip__card" data-reveal="fade-up" data-delay="1">
-        <span class="strip__ico"><svg class="ic"><use href="#i-check"/></svg></span>
-        <h4>Accredited Centre</h4>
-        <p>Approved by the concerned government authority.</p>
+        <span class="strip__ico"><svg class="ic"><use href="#i-award"/></svg></span>
+        <h4>স্বীকৃত প্রতিষ্ঠান</h4>
+        <p>সংশ্লিষ্ট সরকারি সংস্থা কর্তৃক অনুমোদিত প্রশিক্ষণ কেন্দ্র।</p>
       </article>
       <article class="strip__card" data-reveal="fade-up" data-delay="2">
         <span class="strip__ico"><svg class="ic"><use href="#i-star"/></svg></span>
-        <h4>Expert Trainers</h4>
-        <p>Instructors with real industry &amp; overseas experience.</p>
+        <h4>অভিজ্ঞ প্রশিক্ষক</h4>
+        <p>শিল্প ও বিদেশে কাজের বাস্তব অভিজ্ঞতাসম্পন্ন ইনস্ট্রাক্টর।</p>
       </article>
       <article class="strip__card" data-reveal="fade-up" data-delay="3">
         <span class="strip__ico"><svg class="ic"><use href="#i-pin"/></svg></span>
-        <h4>Job Linkage</h4>
-        <p>Direct connection with employers &amp; recruiting agencies.</p>
+        <h4>চাকরির সংযোগ</h4>
+        <p>নিয়োগকারী প্রতিষ্ঠান ও রিক্রুটিং এজেন্সির সাথে সরাসরি সম্পর্ক।</p>
       </article>
     </div>
   </div>
 </section>
 
+<!-- ================================================ RECENT NOTICE + PRINCIPAL -->
+<section class="section notice-pr" id="notice">
+  <div class="container">
+    <div class="notice-pr__grid">
+
+      <!-- Recent notices -->
+      <div class="np-card" data-reveal="left">
+        <div class="np-card__head">
+          <h3><svg class="ic"><use href="#i-bell"/></svg> সাম্প্রতিক নোটিশ</h3>
+          <a href="#news" class="link-arrow">সব নোটিশ <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <ul class="notices">
+          <li class="notice is-important">
+            <span class="notice__date"><b>১২</b>অক্টো</span>
+            <div class="notice__body">
+              <a href="#news">২০২৬ শিক্ষাবর্ষে নতুন ব্যাচে ভর্তি বিজ্ঞপ্তি প্রকাশিত</a>
+              <span class="notice__meta"><i class="tag tag--hot">জরুরি</i> PDF নোটিশ</span>
+            </div>
+            <a href="#" class="notice__dl" aria-label="ডাউনলোড"><svg class="ic ic--xs"><use href="#i-download"/></svg></a>
+          </li>
+          <li class="notice">
+            <span class="notice__date"><b>০৮</b>অক্টো</span>
+            <div class="notice__body">
+              <a href="#news">ট্রেড টেস্ট ও মূল্যায়নের সময়সূচি প্রকাশ</a>
+              <span class="notice__meta"><i class="tag">নোটিশ</i> PDF নোটিশ</span>
+            </div>
+            <a href="#" class="notice__dl" aria-label="ডাউনলোড"><svg class="ic ic--xs"><use href="#i-download"/></svg></a>
+          </li>
+          <li class="notice">
+            <span class="notice__date"><b>০২</b>অক্টো</span>
+            <div class="notice__body">
+              <a href="#news">সার্টিফিকেট বিতরণ অনুষ্ঠানের তারিখ পরিবর্তন</a>
+              <span class="notice__meta"><i class="tag">নোটিশ</i> PDF নোটিশ</span>
+            </div>
+            <a href="#" class="notice__dl" aria-label="ডাউনলোড"><svg class="ic ic--xs"><use href="#i-download"/></svg></a>
+          </li>
+          <li class="notice">
+            <span class="notice__date"><b>২৫</b>সেপ্ট</span>
+            <div class="notice__body">
+              <a href="#news">বিদেশি নিয়োগকারী প্রতিষ্ঠানের ভিজিট ও ইন্টারভিউ</a>
+              <span class="notice__meta"><i class="tag">ইভেন্ট</i> PDF নোটিশ</span>
+            </div>
+            <a href="#" class="notice__dl" aria-label="ডাউনলোড"><svg class="ic ic--xs"><use href="#i-download"/></svg></a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Principal message -->
+      <div class="np-card np-card--principal" data-reveal="right">
+        <div class="np-card__head">
+          <h3><svg class="ic"><use href="#i-user"/></svg> অধ্যক্ষের বাণী</h3>
+        </div>
+
+        <div class="principal">
+          <div class="principal__photo">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" alt="অধ্যক্ষ">
+          </div>
+          <div class="principal__body">
+            <svg class="ic principal__q"><use href="#i-quote"/></svg>
+            <p>
+              প্রিয় শিক্ষার্থী, আমাদের লক্ষ্য শুধু সনদ দেওয়া নয় — বরং আপনাকে সত্যিকারভাবে
+              দক্ষ করে তোলা, যাতে দেশে বা বিদেশে যেকোনো কর্মক্ষেত্রে আপনি নিজের জায়গা
+              তৈরি করতে পারেন। আমাদের দরজা সবসময় আপনার জন্য খোলা।
+            </p>
+            <div class="principal__sign">
+              <strong>মোঃ অধ্যক্ষের নাম</strong>
+              <span>অধ্যক্ষ, BISTI</span>
+            </div>
+            <a href="#about" class="link-arrow">সম্পূর্ণ বাণী পড়ুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ================================================================= ABOUT -->
-<section class="section about" id="about">
+<section class="section section--tint about" id="about">
   <div class="container about__inner">
 
     <div class="about__media" data-reveal="left">
       <div class="about__img about__img--main">
-        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="Instructor teaching trainees">
+        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80" alt="প্রশিক্ষণ সেশন">
       </div>
       <div class="about__img about__img--sub">
-        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Welding practice session">
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="ওয়েল্ডিং অনুশীলন">
       </div>
       <div class="about__exp float">
         <strong class="count" data-count="15" data-suffix="+">0</strong>
-        <span>Years of<br>Experience</span>
+        <span>বছরের<br>অভিজ্ঞতা</span>
       </div>
       <span class="about__blob"></span>
     </div>
 
     <div class="about__body" data-reveal="right">
-      <span class="eyebrow">About BISTI</span>
-      <h2>We Turn Potential Into <span class="txt-grad">Employable Skill</span></h2>
+      <span class="eyebrow">আমাদের সম্পর্কে</span>
+      <h2>সম্ভাবনাকে <span class="txt-grad">কর্মদক্ষতায়</span> রূপান্তর</h2>
       <p>
-        Baira International Skills Development &amp; Training Institute (BISTI) is a modern
-        vocational training centre dedicated to producing competent, confident and
-        job-ready technicians. Our workshops, labs and classrooms are equipped to
-        international standards so that every learner practises on the real thing.
+        বায়রা ইন্টারন্যাশনাল স্কিলস ডেভেলপমেন্ট অ্যান্ড ট্রেনিং ইনস্টিটিউট (BISTI) একটি
+        আধুনিক কারিগরি প্রশিক্ষণ প্রতিষ্ঠান, যা দক্ষ, আত্মবিশ্বাসী এবং কর্মপ্রস্তুত
+        টেকনিশিয়ান তৈরি করে। আমাদের ওয়ার্কশপ, ল্যাব ও শ্রেণিকক্ষ আন্তর্জাতিক মানে সাজানো —
+        যাতে প্রতিটি প্রশিক্ষণার্থী বাস্তব যন্ত্রপাতিতেই অনুশীলন করতে পারে।
       </p>
 
       <ul class="ticks">
-        <li><svg class="ic"><use href="#i-check"/></svg> Hands-on training in fully equipped workshops</li>
-        <li><svg class="ic"><use href="#i-check"/></svg> Nationally recognised skill certificate</li>
-        <li><svg class="ic"><use href="#i-check"/></svg> Assessment &amp; trade testing support</li>
-        <li><svg class="ic"><use href="#i-check"/></svg> Career counselling &amp; overseas documentation help</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> পূর্ণাঙ্গ ওয়ার্কশপে হাতে-কলমে প্রশিক্ষণ</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> জাতীয়ভাবে স্বীকৃত দক্ষতা সনদ</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> মূল্যায়ন ও ট্রেড টেস্টে সহায়তা</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> ক্যারিয়ার কাউন্সেলিং ও বিদেশ যাওয়ার ডকুমেন্টেশন সহায়তা</li>
       </ul>
 
       <div class="about__actions">
-        <a href="#contact" class="btn">Talk to an Advisor</a>
-        <a href="#programs" class="link-arrow">View all trades <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+        <a href="#contact" class="btn">পরামর্শ নিন</a>
+        <a href="#programs" class="link-arrow">সব ট্রেড দেখুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
   </div>
@@ -243,162 +517,267 @@
       <div class="counter" data-reveal="fade-up">
         <span class="counter__ico"><svg class="ic"><use href="#i-cap"/></svg></span>
         <strong class="count" data-count="8500" data-suffix="+">0</strong>
-        <span>Youths Trained</span>
+        <span>প্রশিক্ষণপ্রাপ্ত</span>
       </div>
       <div class="counter" data-reveal="fade-up" data-delay="1">
-        <span class="counter__ico"><svg class="ic"><use href="#i-check"/></svg></span>
+        <span class="counter__ico"><svg class="ic"><use href="#i-award"/></svg></span>
         <strong class="count" data-count="24">0</strong>
-        <span>Skill Trades</span>
+        <span>স্কিল ট্রেড</span>
       </div>
       <div class="counter" data-reveal="fade-up" data-delay="2">
         <span class="counter__ico"><svg class="ic"><use href="#i-star"/></svg></span>
         <strong class="count" data-count="45">0</strong>
-        <span>Expert Instructors</span>
+        <span>অভিজ্ঞ প্রশিক্ষক</span>
       </div>
       <div class="counter" data-reveal="fade-up" data-delay="3">
         <span class="counter__ico"><svg class="ic"><use href="#i-pin"/></svg></span>
         <strong class="count" data-count="96" data-suffix="%">0</strong>
-        <span>Job Placement</span>
+        <span>কর্মসংস্থান</span>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================== PROGRAMS -->
-<section class="section section--tint programs" id="programs">
+<section class="section programs" id="programs">
   <div class="container">
     <div class="section-head section-head--center" data-reveal="fade-up">
-      <span class="eyebrow eyebrow--center">Our Programs</span>
-      <h2>Choose Your <span class="txt-grad">Skill Trade</span></h2>
-      <p>Short, focused, job-oriented courses designed with employers — start from zero and finish job-ready.</p>
+      <span class="eyebrow eyebrow--center">ট্রেড ও কোর্স</span>
+      <h2>আপনার <span class="txt-grad">দক্ষতা বেছে নিন</span></h2>
+      <p>নিয়োগকারীদের চাহিদা অনুযায়ী সাজানো স্বল্পমেয়াদি, কর্মমুখী কোর্স — শূন্য থেকে শুরু করে চাকরির উপযোগী হয়ে উঠুন।</p>
     </div>
 
     <div class="grid grid-3">
       <article class="program" data-reveal="fade-up">
         <div class="program__media">
-          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="Electrical installation training">
-          <span class="program__tag">Technical</span>
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="ইলেকট্রিক্যাল প্রশিক্ষণ">
+          <span class="program__tag">টেকনিক্যাল</span>
         </div>
         <div class="program__body">
-          <h3><a href="#admission">Electrical Installation &amp; Maintenance</a></h3>
-          <p>Wiring, motor control, safety and troubleshooting for residential &amp; industrial setups.</p>
+          <h3><a href="#admission">ইলেকট্রিক্যাল (Electrical)</a></h3>
+          <p>ওয়্যারিং, মোটর কন্ট্রোল, নিরাপত্তা এবং আবাসিক ও শিল্প স্থাপনায় ট্রাবলশুটিং।</p>
           <ul class="program__meta">
-            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> 3 Months</li>
-            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> 30 Seats</li>
+            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> ৩ মাস</li>
+            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> ৩০ আসন</li>
           </ul>
-          <a href="#admission" class="program__link">Course Details <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <a href="#admission" class="program__link">বিস্তারিত <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="program" data-reveal="fade-up" data-delay="1">
         <div class="program__media">
-          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=700&q=80" alt="Welding and fabrication training">
-          <span class="program__tag">Technical</span>
+          <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=700&q=80" alt="ওয়েল্ডিং প্রশিক্ষণ">
+          <span class="program__tag">টেকনিক্যাল</span>
         </div>
         <div class="program__body">
-          <h3><a href="#admission">Welding &amp; Fabrication (6G)</a></h3>
-          <p>SMAW, MIG/TIG practice with plate &amp; pipe joints — the skills overseas employers ask for.</p>
+          <h3><a href="#admission">ওয়েল্ডিং (Welding)</a></h3>
+          <p>SMAW ও MIG/TIG প্লেট এবং পাইপ জয়েন্ট অনুশীলন — বিদেশি নিয়োগকর্তার চাহিদার স্কিল।</p>
           <ul class="program__meta">
-            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> 3 Months</li>
-            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> 25 Seats</li>
+            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> ৩ মাস</li>
+            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> ২৫ আসন</li>
           </ul>
-          <a href="#admission" class="program__link">Course Details <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <a href="#admission" class="program__link">বিস্তারিত <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="program" data-reveal="fade-up" data-delay="2">
         <div class="program__media">
-          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=700&q=80" alt="AC and refrigeration servicing">
-          <span class="program__tag">Technical</span>
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=700&q=80" alt="রেফ্রিজারেশন প্রশিক্ষণ">
+          <span class="program__tag">টেকনিক্যাল</span>
         </div>
         <div class="program__body">
-          <h3><a href="#admission">AC &amp; Refrigeration Servicing</a></h3>
-          <p>Installation, gas charging, fault finding and preventive maintenance of cooling systems.</p>
+          <h3><a href="#admission">রেফ্রিজারেশন ও এয়ার কন্ডিশনিং</a></h3>
+          <p>ইনস্টলেশন, গ্যাস চার্জিং, ত্রুটি নির্ণয় এবং প্রতিরোধমূলক রক্ষণাবেক্ষণ।</p>
           <ul class="program__meta">
-            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> 2 Months</li>
-            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> 20 Seats</li>
+            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> ২ মাস</li>
+            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> ২০ আসন</li>
           </ul>
-          <a href="#admission" class="program__link">Course Details <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <a href="#admission" class="program__link">বিস্তারিত <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="program" data-reveal="fade-up">
         <div class="program__media">
-          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="Computer and IT training">
-          <span class="program__tag">IT</span>
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="কম্পিউটার প্রশিক্ষণ">
+          <span class="program__tag">আইটি</span>
         </div>
         <div class="program__body">
-          <h3><a href="#admission">Computer Application &amp; IT Support</a></h3>
-          <p>Office productivity, hardware basics, networking and freelance-ready digital skills.</p>
+          <h3><a href="#admission">কম্পিউটার / আইটি (Computer / IT)</a></h3>
+          <p>অফিস অ্যাপ্লিকেশন, হার্ডওয়্যার বেসিক, নেটওয়ার্কিং এবং ফ্রিল্যান্সিং স্কিল।</p>
           <ul class="program__meta">
-            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> 3 Months</li>
-            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> 40 Seats</li>
+            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> ৩ মাস</li>
+            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> ৪০ আসন</li>
           </ul>
-          <a href="#admission" class="program__link">Course Details <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <a href="#admission" class="program__link">বিস্তারিত <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="program" data-reveal="fade-up" data-delay="1">
         <div class="program__media">
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Plumbing and pipe fitting">
-          <span class="program__tag">Technical</span>
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="প্লাম্বিং প্রশিক্ষণ">
+          <span class="program__tag">টেকনিক্যাল</span>
         </div>
         <div class="program__body">
-          <h3><a href="#admission">Plumbing &amp; Pipe Fitting</a></h3>
-          <p>GI/PPR/CPVC piping, sanitary fitting, drawing reading and pressure testing.</p>
+          <h3><a href="#admission">প্লাম্বিং (Plumbing)</a></h3>
+          <p>GI/PPR/CPVC পাইপিং, স্যানিটারি ফিটিং, ড্রয়িং পড়া ও প্রেশার টেস্টিং।</p>
           <ul class="program__meta">
-            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> 2 Months</li>
-            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> 25 Seats</li>
+            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> ২ মাস</li>
+            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> ২৫ আসন</li>
           </ul>
-          <a href="#admission" class="program__link">Course Details <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <a href="#admission" class="program__link">বিস্তারিত <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="program" data-reveal="fade-up" data-delay="2">
         <div class="program__media">
-          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=700&q=80" alt="Automotive and driving skills">
-          <span class="program__tag">Automotive</span>
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=700&q=80" alt="মেসনরি প্রশিক্ষণ">
+          <span class="program__tag">কনস্ট্রাকশন</span>
         </div>
         <div class="program__body">
-          <h3><a href="#admission">Automotive &amp; Driving Skills</a></h3>
-          <p>Engine fundamentals, light vehicle servicing, safe driving and road regulations.</p>
+          <h3><a href="#admission">মেসনরি ও কনস্ট্রাকশন</a></h3>
+          <p>ইটের গাঁথুনি, প্লাস্টার, আরসিসি কাজ, রড বাইন্ডিং ও সাইট নিরাপত্তা।</p>
           <ul class="program__meta">
-            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> 2 Months</li>
-            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> 30 Seats</li>
+            <li><svg class="ic ic--xs"><use href="#i-clock"/></svg> ২ মাস</li>
+            <li><svg class="ic ic--xs"><use href="#i-cap"/></svg> ৩০ আসন</li>
           </ul>
-          <a href="#admission" class="program__link">Course Details <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <a href="#admission" class="program__link">বিস্তারিত <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
     </div>
 
-    <div class="programs__more" data-reveal="fade-up">
-      <a href="#admission" class="btn btn--ghost">View All 24 Trades <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+    <div class="trades-all" data-reveal="fade-up">
+      <span class="trades-all__label">আরও যে ট্রেডগুলো চালু আছে:</span>
+      <ul class="trades-all__list">
+        <li>কার্পেন্ট্রি (Carpentry)</li>
+        <li>কনস্ট্রাকশন (Construction)</li>
+        <li>ল্যাঙ্গুয়েজ (Language)</li>
+        <li>সোলার পিভি (Solar PV)</li>
+        <li>টেইলরিং (Tailoring)</li>
+        <li>অটোমোটিভ (Automotive)</li>
+        <li>অন্যান্য শর্ট কোর্স</li>
+      </ul>
+    </div>
+
+    <div class="programs__more">
+      <a href="#admission" class="btn btn--ghost">সব ২৪টি ট্রেড দেখুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== RESULT / CERTIFICATE -->
+<section class="section result" id="result">
+  <div class="result__bg"></div>
+  <div class="container">
+
+    <div class="section-head section-head--center" data-reveal="fade-up">
+      <span class="eyebrow eyebrow--center">সার্টিফিকেট</span>
+      <h2>ফলাফল ও <span class="txt-grad">সার্টিফিকেট যাচাই</span></h2>
+      <p>রোল / রেজিস্ট্রেশন নম্বর দিয়ে অনলাইনে ফলাফল দেখুন এবং সার্টিফিকেটের সত্যতা যাচাই করুন।</p>
+    </div>
+
+    <div class="result__panel" data-reveal="zoom">
+
+      <form class="result__form" id="resultForm" novalidate>
+        <div class="result__tabs" role="tablist">
+          <button type="button" class="result__tab is-active" data-mode="result" role="tab">ফলাফল অনুসন্ধান</button>
+          <button type="button" class="result__tab" data-mode="verify" role="tab">সার্টিফিকেট যাচাই</button>
+        </div>
+
+        <div class="result__fields">
+          <div class="field">
+            <label for="rRoll">রোল / রেজিস্ট্রেশন নম্বর</label>
+            <input type="text" value="BISTI-2025-0142" id="rRoll" placeholder="যেমন: BISTI-2025-0142" autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="rTrade">ট্রেড</label>
+            <select id="rTrade">
+              <option value="">সব ট্রেড</option>
+              <option>Electrical</option>
+              <option>Welding</option>
+              <option>Plumbing</option>
+              <option>Computer / IT</option>
+              <option>Refrigeration &amp; AC</option>
+              <option>Masonry</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="rSession">সেশন / ব্যাচ</label>
+            <select id="rSession">
+              <option value="">নির্বাচন করুন</option>
+              <option>২০২৫ — Batch 01</option>
+              <option>২০২৫ — Batch 02</option>
+              <option>২০২৪ — Batch 04</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--maroon result__submit">
+          <svg class="ic ic--xs"><use href="#i-search"/></svg> <span id="resultBtnText">ফলাফল দেখুন</span>
+        </button>
+        <p class="result__hint">ডেমো সাইট — যেকোনো নম্বর দিলেই একটি নমুনা ফলাফল দেখা যাবে। (নম্বরে ৯৯৯ থাকলে "রেকর্ড পাওয়া যায়নি" দেখাবে)</p>
+      </form>
+
+      <!-- result output -->
+      <div class="result__out" id="resultOut" hidden>
+        <div class="rcard" id="rcard">
+          <div class="rcard__top">
+            <img src="bisti%20transparent%20Logo.png" alt="BISTI" class="rcard__logo">
+            <span class="rcard__badge" id="rBadge">উত্তীর্ণ</span>
+          </div>
+
+          <h3 class="rcard__title" id="rTitle">ফলাফল / সার্টিফিকেট রেকর্ড</h3>
+
+          <div class="rcard__grid">
+            <div class="rcard__row"><span>নাম</span><strong id="rName">—</strong></div>
+            <div class="rcard__row"><span>রোল / রেজি. নং</span><strong id="rRollNo">—</strong></div>
+            <div class="rcard__row"><span>ট্রেড</span><strong id="rTradeVal">—</strong></div>
+            <div class="rcard__row"><span>সেশন</span><strong id="rSessionVal">—</strong></div>
+            <div class="rcard__row"><span>মূল্যায়নের তারিখ</span><strong id="rDate">—</strong></div>
+            <div class="rcard__row"><span>ফলাফল</span><strong id="rGrade" class="rcard__grade">—</strong></div>
+          </div>
+
+          <div class="rcard__score">
+            <div class="rcard__score-top"><span>প্রাপ্ত নম্বর</span><b id="rScore">—</b></div>
+            <div class="rcard__score-track"><span id="rScoreBar"></span></div>
+          </div>
+
+          <div class="rcard__actions">
+            <a href="#" class="btn btn--sm"><svg class="ic ic--xs"><use href="#i-download"/></svg> রেজাল্ট শিট ডাউনলোড</a>
+            <a href="#" class="btn btn--ghost btn--sm"><svg class="ic ic--xs"><use href="#i-award"/></svg> সার্টিফিকেট ডাউনলোড</a>
+          </div>
+
+          <p class="rcard__note">
+            <svg class="ic ic--xs"><use href="#i-check"/></svg>
+            এই রেকর্ডটি BISTI-এর অনলাইন ভেরিফিকেশন সিস্টেম দ্বারা নিশ্চিত করা হয়েছে।
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ============================================================ WHY CHOOSE -->
-<section class="section why" id="why">
+<section class="section section--tint why" id="why">
   <div class="container why__inner">
     <div class="why__body" data-reveal="left">
-      <span class="eyebrow">Why BISTI</span>
-      <h2>A Training Experience Built Around <span class="txt-grad">Your Employment</span></h2>
+      <span class="eyebrow">কেন BISTI</span>
+      <h2>প্রতিটি ধাপ সাজানো <span class="txt-grad">আপনার কর্মসংস্থানকে</span> ঘিরে</h2>
       <p>
-        We do not just teach a trade — we prepare you for the workplace. From the first
-        day of class to the day you sit for trade testing, every step is guided.
+        আমরা শুধু একটি ট্রেড শেখাই না — কর্মক্ষেত্রের জন্য প্রস্তুত করি। ক্লাসের প্রথম
+        দিন থেকে ট্রেড টেস্টের দিন পর্যন্ত প্রতিটি ধাপে পাশে থাকি।
       </p>
 
       <div class="bars">
         <div class="bar" data-reveal="fade-up">
-          <div class="bar__top"><span>Practical Workshop Time</span><b>85%</b></div>
+          <div class="bar__top"><span>ব্যবহারিক ওয়ার্কশপ সময়</span><b>৮৫%</b></div>
           <div class="bar__track"><span class="bar__fill" data-bar="85"></span></div>
         </div>
         <div class="bar" data-reveal="fade-up" data-delay="1">
-          <div class="bar__top"><span>Student Satisfaction</span><b>94%</b></div>
+          <div class="bar__top"><span>শিক্ষার্থী সন্তুষ্টি</span><b>৯৪%</b></div>
           <div class="bar__track"><span class="bar__fill" data-bar="94"></span></div>
         </div>
         <div class="bar" data-reveal="fade-up" data-delay="2">
-          <div class="bar__top"><span>Assessment Pass Rate</span><b>91%</b></div>
+          <div class="bar__top"><span>মূল্যায়নে পাসের হার</span><b>৯১%</b></div>
           <div class="bar__track"><span class="bar__fill" data-bar="91"></span></div>
         </div>
       </div>
@@ -407,23 +786,23 @@
     <div class="why__cards">
       <article class="why__card" data-reveal="fade-up">
         <span class="why__num">01</span>
-        <h4>Modern Lab &amp; Workshop</h4>
-        <p>Real machines, real tools, real practice — not just theory on a whiteboard.</p>
+        <h4>আধুনিক ল্যাব ও ওয়ার্কশপ</h4>
+        <p>বাস্তব মেশিন, বাস্তব যন্ত্রপাতি, বাস্তব অনুশীলন — শুধু বোর্ডে তত্ত্ব নয়।</p>
       </article>
       <article class="why__card" data-reveal="fade-up" data-delay="1">
         <span class="why__num">02</span>
-        <h4>Small Batch, More Attention</h4>
-        <p>Limited seats per batch so every trainee gets instructor time.</p>
+        <h4>ছোট ব্যাচ, বেশি মনোযোগ</h4>
+        <p>প্রতি ব্যাচে সীমিত আসন, যাতে প্রত্যেকে প্রশিক্ষকের সময় পায়।</p>
       </article>
       <article class="why__card" data-reveal="fade-up" data-delay="2">
         <span class="why__num">03</span>
-        <h4>Affordable &amp; Flexible</h4>
-        <p>Reasonable fees, easy installments and day/evening shift options.</p>
+        <h4>সাশ্রয়ী ও নমনীয়</h4>
+        <p>যৌক্তিক ফি, সহজ কিস্তি এবং দিন/সন্ধ্যা দুই শিফটের সুবিধা।</p>
       </article>
       <article class="why__card" data-reveal="fade-up" data-delay="3">
         <span class="why__num">04</span>
-        <h4>Certificate &amp; Job Support</h4>
-        <p>Recognised certificate plus placement assistance after graduation.</p>
+        <h4>সনদ ও চাকরিতে সহায়তা</h4>
+        <p>স্বীকৃত সার্টিফিকেটের সাথে প্রশিক্ষণ শেষে কর্মসংস্থান সহায়তা।</p>
       </article>
     </div>
   </div>
@@ -433,86 +812,81 @@
 <section class="marquee-sec">
   <div class="marquee">
     <div class="marquee__track">
-      <span>Electrical</span><i>✦</i><span>Welding</span><i>✦</i><span>Refrigeration</span><i>✦</i>
-      <span>Plumbing</span><i>✦</i><span>Automotive</span><i>✦</i><span>IT Support</span><i>✦</i>
-      <span>Solar PV</span><i>✦</i><span>Tailoring</span><i>✦</i><span>Carpentry</span><i>✦</i>
-      <span>Masonry</span><i>✦</i>
-      <!-- duplicate for seamless loop -->
-      <span>Electrical</span><i>✦</i><span>Welding</span><i>✦</i><span>Refrigeration</span><i>✦</i>
-      <span>Plumbing</span><i>✦</i><span>Automotive</span><i>✦</i><span>IT Support</span><i>✦</i>
-      <span>Solar PV</span><i>✦</i><span>Tailoring</span><i>✦</i><span>Carpentry</span><i>✦</i>
-      <span>Masonry</span><i>✦</i>
+      <span>Electrical</span><i>✦</i><span>Welding</span><i>✦</i><span>Plumbing</span><i>✦</i>
+      <span>Masonry</span><i>✦</i><span>Carpentry</span><i>✦</i><span>Computer / IT</span><i>✦</i>
+      <span>Refrigeration &amp; AC</span><i>✦</i><span>Construction</span><i>✦</i>
+      <span>Language</span><i>✦</i><span>Solar PV</span><i>✦</i>
+      <span>Electrical</span><i>✦</i><span>Welding</span><i>✦</i><span>Plumbing</span><i>✦</i>
+      <span>Masonry</span><i>✦</i><span>Carpentry</span><i>✦</i><span>Computer / IT</span><i>✦</i>
+      <span>Refrigeration &amp; AC</span><i>✦</i><span>Construction</span><i>✦</i>
+      <span>Language</span><i>✦</i><span>Solar PV</span><i>✦</i>
     </div>
   </div>
 </section>
 
-<!-- =========================================================== INSTRUCTORS -->
-<section class="section section--tint team" id="instructors">
+<!-- ==================================================== ADMIN + INSTRUCTORS -->
+<section class="section team" id="instructors">
   <div class="container">
     <div class="section-head section-head--center" data-reveal="fade-up">
-      <span class="eyebrow eyebrow--center">Our People</span>
-      <h2>Meet Our <span class="txt-grad">Expert Instructors</span></h2>
-      <p>Trainers who have worked on site, on the floor and overseas — and know exactly what the job demands.</p>
+      <span class="eyebrow eyebrow--center">প্রশাসন ও প্রশিক্ষক</span>
+      <h2>আমাদের দক্ষ <span class="txt-grad">প্রশিক্ষকমণ্ডলী</span></h2>
+      <p>যাঁরা মাঠে, কারখানায় ও বিদেশে কাজ করেছেন — এবং জানেন চাকরিতে ঠিক কী চাওয়া হয়।</p>
     </div>
 
     <div class="grid grid-4">
       <article class="member" data-reveal="fade-up">
         <div class="member__media">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="Instructor">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80" alt="প্রশিক্ষক">
           <ul class="member__social">
             <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
             <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
-            <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
           </ul>
         </div>
         <div class="member__body">
-          <h4>Md. Instructor Name</h4>
-          <span>Chief Instructor — Electrical</span>
+          <h4>প্রশিক্ষকের নাম</h4>
+          <span>চিফ ইনস্ট্রাক্টর — ইলেকট্রিক্যাল</span>
         </div>
       </article>
 
       <article class="member" data-reveal="fade-up" data-delay="1">
         <div class="member__media">
-          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="Instructor">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" alt="প্রশিক্ষক">
           <ul class="member__social">
             <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
             <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
-            <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
           </ul>
         </div>
         <div class="member__body">
-          <h4>Ms. Instructor Name</h4>
-          <span>Senior Trainer — IT &amp; Computer</span>
+          <h4>প্রশিক্ষকের নাম</h4>
+          <span>সিনিয়র ট্রেইনার — কম্পিউটার ও আইটি</span>
         </div>
       </article>
 
       <article class="member" data-reveal="fade-up" data-delay="2">
         <div class="member__media">
-          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Instructor">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="প্রশিক্ষক">
           <ul class="member__social">
             <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
             <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
-            <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
           </ul>
         </div>
         <div class="member__body">
-          <h4>Md. Instructor Name</h4>
-          <span>Trade Trainer — Welding</span>
+          <h4>প্রশিক্ষকের নাম</h4>
+          <span>ট্রেড ট্রেইনার — ওয়েল্ডিং</span>
         </div>
       </article>
 
       <article class="member" data-reveal="fade-up" data-delay="3">
         <div class="member__media">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="Instructor">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80" alt="প্রশিক্ষক">
           <ul class="member__social">
             <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
             <li><a href="#" aria-label="LinkedIn"><svg class="ic"><use href="#i-in"/></svg></a></li>
-            <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
           </ul>
         </div>
         <div class="member__body">
-          <h4>Ms. Instructor Name</h4>
-          <span>Career Counsellor</span>
+          <h4>প্রশিক্ষকের নাম</h4>
+          <span>ক্যারিয়ার কাউন্সেলর</span>
         </div>
       </article>
     </div>
@@ -522,42 +896,47 @@
 <!-- ============================================================= ADMISSION -->
 <section class="admission" id="admission">
   <div class="admission__bg">
-    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80" alt="">
+    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80" alt="">
     <span class="admission__veil"></span>
   </div>
 
   <div class="container admission__inner">
     <div class="admission__text" data-reveal="left">
-      <span class="eyebrow eyebrow--light">Admission Open</span>
-      <h2 class="on-dark">Enrol Today — <span class="txt-grad-light">Seats Are Limited</span></h2>
+      <span class="eyebrow eyebrow--light">ভর্তি চলছে</span>
+      <h2 class="on-dark">আজই ভর্তি হোন — <span class="txt-grad-light">আসন সীমিত</span></h2>
       <p class="on-dark">
-        New batch is starting soon. Fill in the form and our admission officer will
-        call you back with course details, fees and class schedule.
+        নতুন ব্যাচ শুরু হতে যাচ্ছে। ফর্মটি পূরণ করুন — আমাদের ভর্তি অফিসার কোর্সের
+        বিস্তারিত, ফি ও ক্লাসের সময়সূচি জানিয়ে কল করবেন।
       </p>
       <ul class="admission__list">
-        <li><svg class="ic"><use href="#i-check"/></svg> Free career counselling session</li>
-        <li><svg class="ic"><use href="#i-check"/></svg> Easy installment facility</li>
-        <li><svg class="ic"><use href="#i-check"/></svg> Day &amp; evening shift available</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> ফ্রি ক্যারিয়ার কাউন্সেলিং সেশন</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> সহজ কিস্তিতে কোর্স ফি</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> দিন ও সন্ধ্যা শিফটের সুবিধা</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> অনলাইন আবেদনের সুবিধা</li>
       </ul>
     </div>
 
     <form class="admission__form" id="admissionForm" data-reveal="right" novalidate>
-      <h3>Quick Admission Form</h3>
-      <div class="field"><input type="text" name="name" placeholder="Full Name" required></div>
-      <div class="field"><input type="tel" name="phone" placeholder="Mobile Number" required></div>
+      <h3>দ্রুত ভর্তি ফর্ম</h3>
+      <div class="field"><input type="text" name="name" placeholder="পূর্ণ নাম" required></div>
+      <div class="field"><input type="tel" name="phone" placeholder="মোবাইল নম্বর" required></div>
       <div class="field">
         <select name="trade" required>
-          <option value="">Select a Trade</option>
-          <option>Electrical Installation &amp; Maintenance</option>
-          <option>Welding &amp; Fabrication</option>
-          <option>AC &amp; Refrigeration</option>
-          <option>Computer Application &amp; IT</option>
-          <option>Plumbing &amp; Pipe Fitting</option>
-          <option>Automotive &amp; Driving</option>
+          <option value="">ট্রেড নির্বাচন করুন</option>
+          <option>Electrical</option>
+          <option>Welding</option>
+          <option>Plumbing</option>
+          <option>Masonry</option>
+          <option>Carpentry</option>
+          <option>Computer / IT</option>
+          <option>Refrigeration &amp; Air Conditioning</option>
+          <option>Construction</option>
+          <option>Language</option>
+          <option>Other Short Courses</option>
         </select>
       </div>
-      <div class="field"><textarea name="message" rows="3" placeholder="Your message (optional)"></textarea></div>
-      <button type="submit" class="btn btn--maroon btn--block">Submit Application <svg class="ic ic--xs"><use href="#i-arrow"/></svg></button>
+      <div class="field"><textarea name="message" rows="3" placeholder="আপনার বার্তা (ঐচ্ছিক)"></textarea></div>
+      <button type="submit" class="btn btn--maroon btn--block">আবেদন জমা দিন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></button>
       <p class="form__note" id="formNote" role="status"></p>
     </form>
   </div>
@@ -567,8 +946,8 @@
 <section class="section testimonials" id="testimonials">
   <div class="container">
     <div class="section-head section-head--center" data-reveal="fade-up">
-      <span class="eyebrow eyebrow--center">Success Stories</span>
-      <h2>What Our <span class="txt-grad">Trainees Say</span></h2>
+      <span class="eyebrow eyebrow--center">সফলতার গল্প</span>
+      <h2>আমাদের প্রশিক্ষণার্থীরা <span class="txt-grad">যা বলেন</span></h2>
     </div>
 
     <div class="tslider" id="tslider">
@@ -577,11 +956,11 @@
 
           <div class="tslide">
             <svg class="tslide__q ic"><use href="#i-quote"/></svg>
-            <p>I joined the welding course with zero experience. After three months I passed
-               the trade test and now I am working abroad. The practical classes made all the difference.</p>
+            <p>শূন্য অভিজ্ঞতা নিয়ে ওয়েল্ডিং কোর্সে ভর্তি হয়েছিলাম। তিন মাস পর ট্রেড টেস্ট
+               পাস করে এখন বিদেশে কাজ করছি। ব্যবহারিক ক্লাসগুলোই আসল পার্থক্য গড়ে দিয়েছে।</p>
             <div class="tslide__who">
               <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="">
-              <div><strong>Md. Rakib Hasan</strong><span>Welding — Batch 12</span></div>
+              <div><strong>মোঃ রাকিব হাসান</strong><span>ওয়েল্ডিং — ব্যাচ ১২</span></div>
             </div>
             <div class="tslide__stars">
               <svg class="ic ic--xs"><use href="#i-star"/></svg><svg class="ic ic--xs"><use href="#i-star"/></svg>
@@ -592,11 +971,11 @@
 
           <div class="tslide">
             <svg class="tslide__q ic"><use href="#i-quote"/></svg>
-            <p>The IT course was very well organised. Trainers explained everything patiently
-               and helped me start freelancing from home. Truly a life-changing training.</p>
+            <p>আইটি কোর্সটি খুব সুন্দরভাবে পরিচালিত হয়েছে। প্রশিক্ষকরা ধৈর্য ধরে সব বুঝিয়েছেন
+               এবং ঘরে বসে ফ্রিল্যান্সিং শুরু করতে সাহায্য করেছেন।</p>
             <div class="tslide__who">
               <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=200&q=80" alt="">
-              <div><strong>Nusrat Jahan</strong><span>Computer &amp; IT — Batch 08</span></div>
+              <div><strong>নুসরাত জাহান</strong><span>কম্পিউটার ও আইটি — ব্যাচ ০৮</span></div>
             </div>
             <div class="tslide__stars">
               <svg class="ic ic--xs"><use href="#i-star"/></svg><svg class="ic ic--xs"><use href="#i-star"/></svg>
@@ -607,11 +986,11 @@
 
           <div class="tslide">
             <svg class="tslide__q ic"><use href="#i-quote"/></svg>
-            <p>Clean workshops, real machines and instructors who actually care. The career
-               counselling team also helped me prepare my documents properly.</p>
+            <p>পরিষ্কার ওয়ার্কশপ, আসল মেশিন আর সত্যিকারের যত্ন নেওয়া প্রশিক্ষক। ক্যারিয়ার
+               কাউন্সেলিং টিম কাগজপত্র প্রস্তুত করতেও সাহায্য করেছে।</p>
             <div class="tslide__who">
               <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="">
-              <div><strong>Abdul Karim</strong><span>AC &amp; Refrigeration — Batch 05</span></div>
+              <div><strong>আব্দুল করিম</strong><span>রেফ্রিজারেশন ও এসি — ব্যাচ ০৫</span></div>
             </div>
             <div class="tslide__stars">
               <svg class="ic ic--xs"><use href="#i-star"/></svg><svg class="ic ic--xs"><use href="#i-star"/></svg>
@@ -624,9 +1003,9 @@
       </div>
 
       <div class="tslider__nav">
-        <button class="tslider__btn" id="tPrev" aria-label="Previous"><svg class="ic"><use href="#i-left"/></svg></button>
+        <button class="tslider__btn" id="tPrev" aria-label="আগের"><svg class="ic"><use href="#i-left"/></svg></button>
         <div class="tslider__dots" id="tDots"></div>
-        <button class="tslider__btn" id="tNext" aria-label="Next"><svg class="ic"><use href="#i-right"/></svg></button>
+        <button class="tslider__btn" id="tNext" aria-label="পরের"><svg class="ic"><use href="#i-right"/></svg></button>
       </div>
     </div>
   </div>
@@ -636,29 +1015,29 @@
 <section class="section section--tint gallery" id="gallery">
   <div class="container">
     <div class="section-head section-head--center" data-reveal="fade-up">
-      <span class="eyebrow eyebrow--center">Campus Life</span>
-      <h2>Inside Our <span class="txt-grad">Training Centre</span></h2>
+      <span class="eyebrow eyebrow--center">ক্যাম্পাস জীবন</span>
+      <h2>আমাদের প্রশিক্ষণ কেন্দ্রের <span class="txt-grad">ভেতরের ছবি</span></h2>
     </div>
 
     <div class="gallery__grid">
       <a href="#" class="gitem gitem--wide" data-reveal="zoom">
-        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="Workshop">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80" alt="ওয়ার্কশপ">
         <span class="gitem__veil"><svg class="ic"><use href="#i-plus"/></svg></span>
       </a>
       <a href="#" class="gitem" data-reveal="zoom" data-delay="1">
-        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=80" alt="Classroom">
+        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=700&q=80" alt="শ্রেণিকক্ষ">
         <span class="gitem__veil"><svg class="ic"><use href="#i-plus"/></svg></span>
       </a>
       <a href="#" class="gitem" data-reveal="zoom" data-delay="2">
-        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=700&q=80" alt="Trainees">
+        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=700&q=80" alt="প্রশিক্ষণার্থী">
         <span class="gitem__veil"><svg class="ic"><use href="#i-plus"/></svg></span>
       </a>
       <a href="#" class="gitem" data-reveal="zoom" data-delay="3">
-        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" alt="Team work">
+        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=700&q=80" alt="টিম ওয়ার্ক">
         <span class="gitem__veil"><svg class="ic"><use href="#i-plus"/></svg></span>
       </a>
       <a href="#" class="gitem gitem--tall" data-reveal="zoom" data-delay="4">
-        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80" alt="Graduation">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80" alt="সমাবর্তন">
         <span class="gitem__veil"><svg class="ic"><use href="#i-plus"/></svg></span>
       </a>
     </div>
@@ -669,130 +1048,149 @@
 <section class="section news" id="news">
   <div class="container">
     <div class="section-head section-head--center" data-reveal="fade-up">
-      <span class="eyebrow eyebrow--center">Notice &amp; News</span>
-      <h2>Latest <span class="txt-grad">Updates</span></h2>
+      <span class="eyebrow eyebrow--center">নোটিশ ও সংবাদ</span>
+      <h2>সাম্প্রতিক <span class="txt-grad">আপডেট</span></h2>
     </div>
 
     <div class="grid grid-3">
       <article class="post" data-reveal="fade-up">
         <a href="#" class="post__media">
           <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=700&q=80" alt="">
-          <span class="post__date"><b>12</b>Oct</span>
+          <span class="post__date"><b>১২</b>অক্টো</span>
         </a>
         <div class="post__body">
-          <ul class="post__meta"><li>Admission</li><li>By Admin</li></ul>
-          <h3><a href="#">New batch admission for Welding &amp; Electrical is now open</a></h3>
-          <a href="#" class="link-arrow">Read more <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <ul class="post__meta"><li>ভর্তি</li><li>অ্যাডমিন</li></ul>
+          <h3><a href="#">ওয়েল্ডিং ও ইলেকট্রিক্যাল ট্রেডে নতুন ব্যাচের ভর্তি শুরু</a></h3>
+          <a href="#" class="link-arrow">বিস্তারিত পড়ুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="post" data-reveal="fade-up" data-delay="1">
         <a href="#" class="post__media">
           <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=700&q=80" alt="">
-          <span class="post__date"><b>05</b>Oct</span>
+          <span class="post__date"><b>০৮</b>অক্টো</span>
         </a>
         <div class="post__body">
-          <ul class="post__meta"><li>Notice</li><li>By Admin</li></ul>
-          <h3><a href="#">Trade test &amp; assessment schedule published for all trainees</a></h3>
-          <a href="#" class="link-arrow">Read more <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <ul class="post__meta"><li>নোটিশ</li><li>অ্যাডমিন</li></ul>
+          <h3><a href="#">সকল প্রশিক্ষণার্থীর জন্য ট্রেড টেস্ট ও মূল্যায়নের সময়সূচি</a></h3>
+          <a href="#" class="link-arrow">বিস্তারিত পড়ুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
 
       <article class="post" data-reveal="fade-up" data-delay="2">
         <a href="#" class="post__media">
           <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=700&q=80" alt="">
-          <span class="post__date"><b>28</b>Sep</span>
+          <span class="post__date"><b>২৮</b>সেপ্ট</span>
         </a>
         <div class="post__body">
-          <ul class="post__meta"><li>Placement</li><li>By Admin</li></ul>
-          <h3><a href="#">Employer visit: overseas recruiting agencies meet our graduates</a></h3>
-          <a href="#" class="link-arrow">Read more <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+          <ul class="post__meta"><li>কর্মসংস্থান</li><li>অ্যাডমিন</li></ul>
+          <h3><a href="#">বিদেশি নিয়োগকারী প্রতিষ্ঠান আমাদের গ্র্যাজুয়েটদের সাথে দেখা করবে</a></h3>
+          <a href="#" class="link-arrow">বিস্তারিত পড়ুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
         </div>
       </article>
     </div>
   </div>
 </section>
 
+<!-- ================================================================ CAREER -->
+<section class="career" id="career">
+  <div class="container career__inner">
+    <div class="career__text" data-reveal="left">
+      <span class="eyebrow eyebrow--light">ক্যারিয়ার</span>
+      <h2 class="on-dark">ইন্টার্নশিপ ও <span class="txt-grad-light">চাকরির সুযোগ</span></h2>
+      <p class="on-dark">আমাদের প্রশিক্ষণার্থীদের জন্য ইন্টার্নশিপ এবং দেশি-বিদেশি নিয়োগকারী প্রতিষ্ঠানের সর্বশেষ সার্কুলার।</p>
+    </div>
+    <div class="career__actions" data-reveal="right">
+      <a href="#news" class="btn btn--light">চাকরির সার্কুলার <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+      <a href="#contact" class="btn btn--ghost btn--ghost-light">ইন্টার্নশিপের জন্য আবেদন</a>
+    </div>
+  </div>
+</section>
+
 <!-- =================================================================== FAQ -->
-<section class="section section--tint faq" id="faq">
+<section class="section faq" id="faq">
   <div class="container faq__inner">
     <div class="faq__head" data-reveal="left">
-      <span class="eyebrow">Have Questions?</span>
-      <h2>Frequently Asked <span class="txt-grad">Questions</span></h2>
-      <p>Can't find the answer you are looking for? Our admission team is one call away.</p>
-      <a href="#contact" class="btn">Contact Us <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
+      <span class="eyebrow">প্রশ্ন আছে?</span>
+      <h2>সাধারণ <span class="txt-grad">জিজ্ঞাসা</span></h2>
+      <p>উত্তর খুঁজে পাচ্ছেন না? আমাদের ভর্তি টিম এক কল দূরেই।</p>
+      <a href="#contact" class="btn">যোগাযোগ করুন <svg class="ic ic--xs"><use href="#i-arrow"/></svg></a>
     </div>
 
     <div class="faq__list" data-reveal="right">
       <div class="acc is-open">
-        <button class="acc__q" type="button">Who can apply for a course at BISTI?<span class="acc__ico"></span></button>
-        <div class="acc__a"><p>Anyone aged 18 and above can apply. Minimum educational qualification depends on the trade — most technical courses require only basic literacy and a valid national ID.</p></div>
+        <button class="acc__q" type="button">কে ভর্তি হতে পারবেন?<span class="acc__ico"></span></button>
+        <div class="acc__a"><p>১৮ বছর বা তার বেশি বয়সী যে কেউ আবেদন করতে পারবেন। ন্যূনতম শিক্ষাগত যোগ্যতা ট্রেড অনুযায়ী ভিন্ন — বেশিরভাগ কারিগরি কোর্সে প্রাথমিক সাক্ষরতা ও জাতীয় পরিচয়পত্র থাকলেই হয়।</p></div>
       </div>
       <div class="acc">
-        <button class="acc__q" type="button">How long are the courses?<span class="acc__ico"></span></button>
-        <div class="acc__a"><p>Courses run from one to six months depending on the trade. Each course combines classroom sessions with substantial practical workshop hours.</p></div>
+        <button class="acc__q" type="button">কোর্স কতদিনের?<span class="acc__ico"></span></button>
+        <div class="acc__a"><p>ট্রেড অনুযায়ী কোর্স ১ থেকে ৬ মাস পর্যন্ত হয়ে থাকে। প্রতিটি কোর্সে শ্রেণিকক্ষের পাশাপাশি যথেষ্ট ব্যবহারিক ওয়ার্কশপ সময় থাকে।</p></div>
       </div>
       <div class="acc">
-        <button class="acc__q" type="button">Will I get a certificate after completion?<span class="acc__ico"></span></button>
-        <div class="acc__a"><p>Yes. Trainees who complete the course and pass the assessment receive a recognised skill certificate, which supports both local employment and overseas processing.</p></div>
+        <button class="acc__q" type="button">কোর্স শেষে সার্টিফিকেট পাবো কি?<span class="acc__ico"></span></button>
+        <div class="acc__a"><p>হ্যাঁ। কোর্স সম্পন্ন করে মূল্যায়নে উত্তীর্ণ হলে স্বীকৃত দক্ষতা সনদ দেওয়া হয়, যা দেশি চাকরি ও বিদেশ যাওয়ার প্রক্রিয়ায় সহায়ক।</p></div>
       </div>
       <div class="acc">
-        <button class="acc__q" type="button">Do you help with job placement?<span class="acc__ico"></span></button>
-        <div class="acc__a"><p>Our placement desk connects graduates with local employers and recruiting agencies, and assists with documentation and interview preparation.</p></div>
+        <button class="acc__q" type="button">চাকরিতে সহায়তা করেন কি?<span class="acc__ico"></span></button>
+        <div class="acc__a"><p>আমাদের প্লেসমেন্ট ডেস্ক প্রশিক্ষণপ্রাপ্তদের দেশি নিয়োগকারী ও রিক্রুটিং এজেন্সির সাথে সংযুক্ত করে এবং ডকুমেন্টেশন ও ইন্টারভিউ প্রস্তুতিতে সহায়তা করে।</p></div>
       </div>
       <div class="acc">
-        <button class="acc__q" type="button">Is there any installment facility for the course fee?<span class="acc__ico"></span></button>
-        <div class="acc__a"><p>Yes — course fees can be paid in easy installments. Please speak with our admission officer for the current fee structure and payment plan.</p></div>
+        <button class="acc__q" type="button">কোর্স ফি কি কিস্তিতে দেওয়া যায়?<span class="acc__ico"></span></button>
+        <div class="acc__a"><p>হ্যাঁ — কোর্স ফি সহজ কিস্তিতে পরিশোধের সুবিধা আছে। বর্তমান ফি কাঠামো ও পরিশোধ পরিকল্পনার জন্য আমাদের ভর্তি অফিসারের সাথে কথা বলুন।</p></div>
+      </div>
+      <div class="acc">
+        <button class="acc__q" type="button">সার্টিফিকেট কীভাবে যাচাই করবো?<span class="acc__ico"></span></button>
+        <div class="acc__a"><p>ওয়েবসাইটের <a href="#result">সার্টিফিকেট যাচাই</a> সেকশনে গিয়ে সার্টিফিকেট নম্বর দিলে রেকর্ডটি যাচাই হয়ে যাবে।</p></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- =============================================================== CONTACT -->
-<section class="section contact" id="contact">
+<section class="section section--tint contact" id="contact">
   <div class="container">
     <div class="section-head section-head--center" data-reveal="fade-up">
-      <span class="eyebrow eyebrow--center">Get In Touch</span>
-      <h2>Visit Our <span class="txt-grad">Campus</span></h2>
+      <span class="eyebrow eyebrow--center">যোগাযোগ</span>
+      <h2>আমাদের <span class="txt-grad">ক্যাম্পাসে আসুন</span></h2>
     </div>
 
     <div class="contact__grid">
       <div class="contact__cards">
         <article class="ccard" data-reveal="fade-up">
           <span class="ccard__ico"><svg class="ic"><use href="#i-pin"/></svg></span>
-          <h4>Our Location</h4>
-          <p>Baira International Skills Development &amp; Training Institute (BISTI)<br>Address line, City, Bangladesh</p>
+          <h4>ঠিকানা</h4>
+          <p>বায়রা ইন্টারন্যাশনাল স্কিলস ডেভেলপমেন্ট অ্যান্ড ট্রেনিং ইনস্টিটিউট (BISTI)<br>ঠিকানার লাইন, শহর, বাংলাদেশ</p>
         </article>
         <article class="ccard" data-reveal="fade-up" data-delay="1">
           <span class="ccard__ico"><svg class="ic"><use href="#i-phone"/></svg></span>
-          <h4>Phone</h4>
-          <p><a href="tel:+8800000000000">+880 0000-000000</a><br><a href="tel:+8800000000000">+880 0000-000000</a></p>
+          <h4>ফোন</h4>
+          <p><a href="tel:+8800000000000">+880 1700-000000</a><br><a href="tel:+8800000000000">+880 1700-000000</a></p>
         </article>
         <article class="ccard" data-reveal="fade-up" data-delay="2">
           <span class="ccard__ico"><svg class="ic"><use href="#i-mail"/></svg></span>
-          <h4>Email</h4>
+          <h4>ইমেইল</h4>
           <p><a href="mailto:info@bisti.edu.bd">info@bisti.edu.bd</a><br><a href="mailto:admission@bisti.edu.bd">admission@bisti.edu.bd</a></p>
         </article>
         <article class="ccard" data-reveal="fade-up" data-delay="3">
           <span class="ccard__ico"><svg class="ic"><use href="#i-clock"/></svg></span>
-          <h4>Office Hours</h4>
-          <p>Saturday – Thursday<br>9:00 AM – 5:00 PM</p>
+          <h4>অফিস সময়</h4>
+          <p>শনিবার – বৃহস্পতিবার<br>সকাল ৯টা – বিকাল ৫টা</p>
         </article>
       </div>
 
       <div class="contact__form-wrap" data-reveal="right">
         <form class="contact__form" id="contactForm" novalidate>
-          <h3>Send Us a Message</h3>
+          <h3>আমাদের বার্তা পাঠান</h3>
           <div class="field-row">
-            <div class="field"><input type="text" name="name" placeholder="Your Name" required></div>
-            <div class="field"><input type="email" name="email" placeholder="Email Address" required></div>
+            <div class="field"><input type="text" name="name" placeholder="আপনার নাম" required></div>
+            <div class="field"><input type="email" name="email" placeholder="ইমেইল ঠিকানা" required></div>
           </div>
           <div class="field-row">
-            <div class="field"><input type="tel" name="phone" placeholder="Phone Number"></div>
-            <div class="field"><input type="text" name="subject" placeholder="Subject"></div>
+            <div class="field"><input type="tel" name="phone" placeholder="ফোন নম্বর"></div>
+            <div class="field"><input type="text" name="subject" placeholder="বিষয়"></div>
           </div>
-          <div class="field"><textarea name="message" rows="5" placeholder="Write your message..." required></textarea></div>
-          <button type="submit" class="btn btn--block">Send Message <svg class="ic ic--xs"><use href="#i-arrow"/></svg></button>
+          <div class="field"><textarea name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea></div>
+          <button type="submit" class="btn btn--block">বার্তা পাঠান <svg class="ic ic--xs"><use href="#i-arrow"/></svg></button>
           <p class="form__note" id="contactNote" role="status"></p>
         </form>
         <div class="contact__map">
@@ -812,8 +1210,8 @@
     <div class="footer__top">
       <div class="footer__col footer__col--brand">
         <img src="bisti%20transparent%20Logo.png" alt="BISTI" class="footer__logo">
-        <p>Baira International Skills Development &amp; Training Institute — creating a skilled,
-           employable and self-reliant generation through quality technical training.</p>
+        <p>বায়রা ইন্টারন্যাশনাল স্কিলস ডেভেলপমেন্ট অ্যান্ড ট্রেনিং ইনস্টিটিউট — মানসম্মত
+           কারিগরি প্রশিক্ষণের মাধ্যমে দক্ষ, কর্মপ্রস্তুত ও স্বনির্ভর প্রজন্ম গড়ে তোলা।</p>
         <ul class="socials">
           <li><a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a></li>
           <li><a href="#" aria-label="X"><svg class="ic"><use href="#i-tw"/></svg></a></li>
@@ -823,55 +1221,71 @@
       </div>
 
       <div class="footer__col">
-        <h4>Quick Links</h4>
+        <h4>দ্রুত লিংক</h4>
         <ul class="footer__links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#programs">Our Programs</a></li>
-          <li><a href="#admission">Admission</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#news">Notice Board</a></li>
+          <li><a href="#about">আমাদের সম্পর্কে</a></li>
+          <li><a href="#programs">ট্রেড ও কোর্স</a></li>
+          <li><a href="#admission">ভর্তি তথ্য</a></li>
+          <li><a href="#result">ফলাফল যাচাই</a></li>
+          <li><a href="#gallery">গ্যালারি</a></li>
+          <li><a href="#news">নোটিশ বোর্ড</a></li>
+          <li><a href="#contact">যোগাযোগ</a></li>
+          <li>
+            <a class="footer__office" href="https://www.baira.org.bd/" target="_blank" rel="noopener">
+              হেড অফিস ওয়েবসাইট <svg class="ic ic--xs"><use href="#i-arrow"/></svg>
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Popular Trades</h4>
+        <h4>জনপ্রিয় ট্রেড</h4>
         <ul class="footer__links">
-          <li><a href="#programs">Electrical Installation</a></li>
-          <li><a href="#programs">Welding &amp; Fabrication</a></li>
-          <li><a href="#programs">AC &amp; Refrigeration</a></li>
-          <li><a href="#programs">Computer &amp; IT</a></li>
-          <li><a href="#programs">Plumbing &amp; Pipe Fitting</a></li>
+          <li><a href="#programs">ইলেকট্রিক্যাল</a></li>
+          <li><a href="#programs">ওয়েল্ডিং</a></li>
+          <li><a href="#programs">রেফ্রিজারেশন ও এসি</a></li>
+          <li><a href="#programs">কম্পিউটার / আইটি</a></li>
+          <li><a href="#programs">প্লাম্বিং</a></li>
+          <li><a href="#programs">মেসনরি</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h4>Newsletter</h4>
-        <p>Subscribe to get admission notices and course updates.</p>
+        <h4>নিউজলেটার</h4>
+        <p>ভর্তি নোটিশ ও কোর্স আপডেট পেতে সাবস্ক্রাইব করুন।</p>
         <form class="subscribe" id="subscribeForm" novalidate>
-          <input type="email" name="email" placeholder="Your email address" required>
-          <button type="submit" aria-label="Subscribe"><svg class="ic ic--xs"><use href="#i-arrow"/></svg></button>
+          <input type="email" name="email" placeholder="আপনার ইমেইল" required>
+          <button type="submit" aria-label="সাবস্ক্রাইব"><svg class="ic ic--xs"><use href="#i-arrow"/></svg></button>
         </form>
         <p class="form__note form__note--light" id="subNote" role="status"></p>
 
         <ul class="footer__contact">
-          <li><svg class="ic ic--xs"><use href="#i-phone"/></svg> +880 0000-000000</li>
+          <li><svg class="ic ic--xs"><use href="#i-phone"/></svg> +880 1700-000000</li>
           <li><svg class="ic ic--xs"><use href="#i-mail"/></svg> info@bisti.edu.bd</li>
+          <li><svg class="ic ic--xs"><use href="#i-pin"/></svg> ঠিকানা, বাংলাদেশ</li>
         </ul>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <p>&copy; <span id="year"></span> BISTI — Baira International Skills Development &amp; Training Institute. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> BISTI — বায়রা ইন্টারন্যাশনাল স্কিলস ডেভেলপমেন্ট অ্যান্ড ট্রেনিং ইনস্টিটিউট। সর্বস্বত্ব সংরক্ষিত।</p>
       <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">প্রাইভেসি পলিসি</a></li>
+        <li><a href="#">ব্যবহারের শর্তাবলী</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
-<button class="totop" id="toTop" aria-label="Back to top"><svg class="ic"><use href="#i-arrow"/></svg></button>
+<!-- ===================================================== FLOATING BUTTONS -->
+<a href="https://wa.me/8800000000000" class="fab fab--wa" target="_blank" rel="noopener" aria-label="WhatsApp-এ যোগাযোগ করুন">
+  <svg class="ic"><use href="#i-wa"/></svg>
+  <span class="fab__tip">WhatsApp-এ কথা বলুন</span>
+</a>
 
+<button class="fab fab--top" id="toTop" aria-label="উপরে যান"><svg class="ic"><use href="#i-arrow"/></svg></button>
+
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
