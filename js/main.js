@@ -36,26 +36,47 @@
   /* --------------------------------------------------- sticky header state */
   const header = $('#header');
   const toTop  = $('#toTop');
-  let headerH  = header ? header.offsetHeight : 68;
+  let compactAnchorTimer = 0;
+  const syncHeaderHeight = () => {
+    const headerHeight = header ? header.offsetHeight : 68;
+    document.documentElement.style.setProperty('--header-h', headerHeight + 'px');
+  };
+  const releaseCompactAnchor = () => {
+    if (!header.classList.contains('is-stuck') ||
+        !window.matchMedia('(min-width: 1181px)').matches) {
+      document.body.classList.remove('header-compact');
+    }
+  };
 
   const onScroll = () => {
     const y = window.scrollY;
     if (header) {
-      header.classList.toggle('is-stuck', y > 80);
-      const h = header.offsetHeight;
-      if (h !== headerH) {
-        headerH = h;
-        document.documentElement.style.setProperty('--header-h', h + 'px');
+      const stuck = y > 40;
+      const desktop = window.matchMedia('(min-width: 1181px)').matches;
+      if (stuck && desktop) {
+        window.clearTimeout(compactAnchorTimer);
+        document.body.classList.add('header-compact');
+      } else if (document.body.classList.contains('header-compact')) {
+        window.clearTimeout(compactAnchorTimer);
+        compactAnchorTimer = window.setTimeout(releaseCompactAnchor, 350);
       }
+      header.classList.toggle('is-stuck', stuck);
+      syncHeaderHeight();
     }
     if (toTop) toTop.classList.toggle('is-visible', y > 480);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
-  window.addEventListener('resize', () => {
-    headerH = header ? header.offsetHeight : 68;
-    document.documentElement.style.setProperty('--header-h', headerH + 'px');
-  });
-  document.documentElement.style.setProperty('--header-h', headerH + 'px');
+  window.addEventListener('resize', onScroll);
+  if (header) {
+    header.querySelector('.header__main')?.addEventListener('transitionend', (event) => {
+      if (event.propertyName !== 'max-height') return;
+      syncHeaderHeight();
+      window.clearTimeout(compactAnchorTimer);
+      releaseCompactAnchor();
+    });
+  }
+  syncHeaderHeight();
+  onScroll();
 
   /* ------------------------------------------------------------ mobile nav */
   const nav       = $('#nav');
